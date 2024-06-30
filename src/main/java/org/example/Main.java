@@ -3,9 +3,7 @@ package org.example;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.MatchResult;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -14,35 +12,11 @@ public class Main {
 
 //    チャットGPTでランダムな8文字の文字列を30個生成
     List<String> randomStrings = Arrays.asList(
-        "漢2㍍Qw8掘り",
-        "狂k1ōタゴV3eú4",
-        "M0ヤdàā3モのg",
-        "的G5mュザしæKぬ",
-        "ご1行ŝñō1YÅ7",
-        "ヨ6ヮD漢9Vォ3",
-        "À行7の工ジ達",
-        "チャZōア9仏き",
-        "8ヤ1ū2ヤャýi",
-        "3にア6yォɾō",
-        "2㍍Qw8掘りe矛",
-        "1ōタゴV3eú4毎",
-        "0ヤdàā3モのg",
-        "G5mュザしæKぬゾ",
-        "1行ŝñō1YÅ7毎",
-        "6ヮD漢9Vォ3甘",
-        "行7の工ジ達サ",
-        "Zōア9仏き漢演",
-        "ヤ1ū2ヤャýiē",
-        "にア6yォɾō行",
-        "1Qw8掘りe矛7",
-        "ōタゴV3eú4毎ビ",
-        "ヤdàā3モのg阿",
-        "mュザしæKぬゾ0",
-        "行ŝñō1YÅ7毎的",
-        "ヮD漢9Vォ3甘y",
-        "7の工ジ達サ8",
-        "A9仏き漢演習b",
-        "ヤ1ū2ヤャýiēで"
+        "漢2㍍Qw8掘り", "狂k1ōタゴV3eú4", "M0ヤdàā3モのg", "的G5mュザしæKぬ", "ご1行ŝñō1YÅ7",
+        "ヨ6ヮD漢9Vォ3", "À行7の工ジ達", "チャZōア9仏き", "8ヤ1ū2ヤャýi", "3にア6yォɾō", "2㍍Qw8掘りe矛",
+        "1ōタゴV3eú4毎", "0ヤdàā3モのg", "G5mュザしæKぬゾ", "1行ŝñō1YÅ7毎", "6ヮD漢9Vォ3甘", "行7の工ジ達サ",
+        "Zōア9仏き漢演", "ヤ1ū2ヤャýiē", "にア6yォɾō行", "1Qw8掘りe矛7", "ōタゴV3eú4毎ビ", "ヤdàā3モのg阿",
+        "mュザしæKぬゾ0", "行ŝñō1YÅ7毎的", "ヮD漢9Vォ3甘y", "7の工ジ達サ8", "A9仏き漢演習b", "ヤ1ū2ヤャýiēで"
     );
 
     Pattern numberPattern = Pattern.compile("\\d+");
